@@ -18,4 +18,4 @@ app.use(express.static("public"));
 app.use(TomohonLokaRoute);
 app.use(PlaceRoute);
 
-app.listen(5006, () => console.log("Server Up and Running..."));
+app.listen(5007, () => console.log("Server Up and Running..."));

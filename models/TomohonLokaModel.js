@@ -4,7 +4,7 @@ import Place from "./PlaceModel.js";
 
 const { DataTypes } = Sequelize;
 
-const Product = db.define(
+const TomohonLoka = db.define(
   "tomohonloka",
   {
     uuid: {
@@ -45,10 +45,10 @@ const Product = db.define(
   }
 );
 
-Place.hasMany(Place);
+Place.hasMany(TomohonLoka);
 
-Place.belongsTo(Place, {
+TomohonLoka.belongsTo(Place, {
   foreignKey: "placeId",
 });
 
-export default Place;
+export default TomohonLoka;
