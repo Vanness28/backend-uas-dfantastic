@@ -1,0 +1,25 @@
+GET http://localhost:5006/places
+
+###
+
+GET http://localhost:5006/place/1
+
+###
+POST http://localhost:5006/place
+Content-Type: application/json
+
+{
+    "name": "destinasi"
+}
+
+###
+POST http://localhost:5006/place
+Content-Type: application/json
+
+{
+    "name": "restoran"
+}
+
+
+###
+GET http://localhost:5006/tomohonlokas
